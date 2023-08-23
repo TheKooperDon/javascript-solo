@@ -7,3 +7,5 @@
 //or what if I did something like it shoots out like 4 options?
 
 //What if it was always just 4 options
+
+//maybe go roll a dice idea. with math random. to choose the fate like dungons and dragons

@@ -1,14 +1,19 @@
 /* Basic styling for list items */
 .item {
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Alternating background colors */
-  .item:nth-child(odd) {
-    background-color: #f2f2f2;
-  }
-  
-  .item:nth-child(even) {
-    background-color: #e0e0e0;
-  }
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Alternating background colors */
+.item:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.item:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+}

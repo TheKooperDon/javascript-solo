@@ -19,6 +19,12 @@ const fonts = [
 });
 
 */
+//FUNCTION
+function getFromList(random) {
+  let index = Math.floor(Math.random() * random.length);
+  randomCall = random[index];
+}
+
 //fonts
 leftButton.addEventListener('click', function () {
   const randomFontIndex = Math.floor(Math.random() * fonts.length);
@@ -43,10 +49,18 @@ middleButton.addEventListener('click', function () {
 });
 
 //color
+
+/*
 rightButton.addEventListener('click', function () {
   //jeffHeading.style.console.log('right button clicked!');
   const randomFontColorIndex = Math.floor(Math.random() * fontColors.length);
   const randomFontColors = fontColors[randomFontColorIndex];
   console.log('color?', randomFontColors);
   jeffHeading.style.color = randomFontColors;
+});
+
+*/
+rightButton.addEventListener('click', getFromList (fontColors) {
+  //jeffHeading.style.console.log('right button clicked!');
+ 
 });

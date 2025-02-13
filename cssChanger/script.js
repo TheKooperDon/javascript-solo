@@ -20,12 +20,16 @@ const fonts = [
 
 */
 //FUNCTION
-function getFromList(random) {
-  let index = Math.floor(Math.random() * random.length);
-  randomCall = random[index];
+function getFromList(prop, list) {
+  let index = Math.floor(Math.random() * list.length);
+  let randomValue = list[index];
+  jeffHeading.style[prop] = randomValue;
 }
 
 //fonts
+leftButton.addEventListener('click', () => getFromList('fontFamily', fonts));
+
+/*
 leftButton.addEventListener('click', function () {
   const randomFontIndex = Math.floor(Math.random() * fonts.length);
   const randomFont = fonts[randomFontIndex];
@@ -40,13 +44,20 @@ leftButton.addEventListener('click', function () {
   console.log('did i even choose a font', randomFont);
   console.log('jeffHeading');
 });
-//size
+
+*/
+//BUTTON SIZE
+middleButton.addEventListener('click', () => getFromList('fontSize', fontSize));
+
+/*
 middleButton.addEventListener('click', function () {
   const randomFontSizeIndex = Math.floor(Math.random() * fontSize.length);
   const randomFontSize = fontSize[randomFontSizeIndex];
   //console.log('middle button clicked!');
   jeffHeading.style.fontSize = randomFontSize;
 });
+
+*/
 
 //color
 
@@ -60,7 +71,5 @@ rightButton.addEventListener('click', function () {
 });
 
 */
-rightButton.addEventListener('click', getFromList (fontColors) {
-  //jeffHeading.style.console.log('right button clicked!');
- 
-});
+rightButton.addEventListener('click', () => getFromList('color', fontColors));
+//jeffHeading.style.console.log('right button clicked!');
